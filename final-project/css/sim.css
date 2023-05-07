@@ -1,0 +1,50 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  font-family: Playfair Display;
+}
+
+canvas {
+  display: block;
+}
+
+#instruction {
+  display: block;
+  position: fixed;
+  left: 2%;
+  top: 2%;
+  width: 600px;
+  height: 200px;
+
+  color: whitesmoke;
+  font-size: 20px;
+  text-align: left;
+  text-shadow: -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black;
+}
+
+a {
+  display: block;
+  position: fixed;
+  left: 2%;
+  bottom: 2%;
+  background-color: black;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 24px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+a:hover {
+  background-color: gray;
+}
+
+#film {
+  bottom: 10%;
+}

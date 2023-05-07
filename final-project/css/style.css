@@ -1,0 +1,143 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(226, 226, 226);
+  font-family: Playfair Display;
+  cursor: none;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+
+span {
+  font-style: italic;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+p {
+  font-size: 1.2rem;
+  width: 60%;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+img {
+  display: block;
+  margin: auto;
+  width: 60%;
+  height: auto;
+}
+
+a {
+  display: inline-block;
+  background-color: black;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 24px;
+  border: none;
+  cursor: none;
+}
+
+a:hover {
+  background-color: rgba(128, 128, 128, 0.7);
+}
+
+.sub {
+  background: none;
+  padding: 10px 12px;
+  color: black;
+}
+
+.sub:hover {
+  background: none;
+  color: rgba(128, 128, 128, 0.7);
+  transition: color 0.3s;
+}
+
+.image-container {
+  position: relative;
+  width: 50%;
+  height: 50%;
+  overflow: hidden;
+}
+
+button {
+  background: none;
+  border: none;
+  color: rgba(0, 0, 0, 0.3);
+  text-align: center;
+  font-size: 1rem;
+  cursor: none;
+}
+
+button:hover {
+  background-color: rgba(163, 163, 163, 0.5);
+  transition: background-color 0.5s;
+}
+
+.img-button button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 90px;
+  height: 600px;
+}
+
+#prev-button {
+  left: 8%;
+}
+
+#next-button {
+  right: 8%;
+}
+
+.player-container {
+  width: 300px;
+  text-align: center;
+}
+
+.controls button {
+  width: 80px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+.progress-container {
+  position: relative;
+  height: 5px;
+  background-color: rgba(245, 245, 245, 0.8);
+}
+
+.progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: rgba(128, 128, 128, 0.8);
+  width: 0;
+}
+
+.time {
+  display: inline-block;
+  font-size: 1rem;
+}

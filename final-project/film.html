@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cléo from 5 to 7</title>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+
+    <script src="js/libraries/p5.min.js"></script>
+</head>
+
+<body>
+
+    <h1>Cléo from 5 to 7 (1962)</h1>
+    <p>
+        Original French Title: Cléo de 5 à 7<br>
+        Directed by<a class="sub" href="director.html"><u>Agnès Varda</u></a>
+    </p>
+
+    <p>
+        An Original Soundtrack: <span>Sans Toi (Without You)</span><br>
+    </p>
+    <audio id="myAudio" src="music/sans-toi.mp3"></audio>
+    <div class="player-container">
+        <div class="controls">
+            <button onclick="playAudio()">Play</button>
+            <button onclick="pauseAudio()">Pause</button>
+        </div>
+        <div class="progress-container">
+            <div id="progressBar" class="progress"></div>
+            <div id="currentTime" class="time">00:00</div>
+            <div id="duration" class="time">00:00</div>
+        </div>
+    </div>
+    <br>
+    <p style="font-size: 1rem;">
+        Music by Michel Legrand<br>
+        Lyrics by Agnès Varda<br>
+        Performed by Corinne Marchand
+    </p>
+
+    <h2>Storyline</h2>
+    <p>
+        Two hours from 17:00 to 19:00h on the longest day of the year in the life
+        of a young Parisienne is presented.
+        Cléo, a singer and hypochondriac,
+        becomes increasingly worried that she might have cancer
+        while awaiting test results from her doctor.
+        However, she values her beauty above all else including health.
+        Throughout the film, she grapples with the fear of losing her looks and
+        the constant pressure to maintain her appearance in the public eye.
+    </p>
+
+    <h2>A stunning scene</h2>
+    <img src="image/cleo.png">
+    <figure>
+        <img src="image/cleo2.png">
+        <figcaption style="text-align: center; font-style: italic;">
+            "I always thought everyone was looking at me while I didn't see anyone except myself."
+        </figcaption>
+    </figure>
+    <p>
+        Cléo walks down the street,
+        and we see a rush of images at the same time as she does,
+        some in her memory, some before her eyes. She recalls Bob, her handsome lover, who doesn't pay much attention of
+        her,
+        and, in ominous close-up, the face of the woman who read Tarot cards for her at the start of the film.
+        She also passes women in housedresses carrying loaves of bread home for dinner.
+        Everyone in this scene are staring at Cléo.
+        They beautifully evoke the overload of Cléo's thoughts.
+    </p>
+
+    <h2>Reflection</h2>
+    <p>
+        The film is superficially about a woman coming to terms with her mortality, a common trope for Varda.
+        On a deeper level, Cléo from 5 to 7 confronts the traditionally objectified woman by giving Cléo her own vision.
+        She cannot be constructed through the gaze of others, which is often represented through a motif of reflections
+        and Cléo's ability to strip her body of<a class="sub" href="gaze.html"><u>"to-be-looked-at"</u></a>attributes
+        (such as clothing or wigs).
+    </p>
+    <br>
+
+    <a href="home.html">BACK TO HOME</a>
+
+    <div id="cursorcontainer"></div>
+    <script src="js/cursor.js"></script>
+    <script src="js/audio.js"></script>
+
+</body>
+
+</html>

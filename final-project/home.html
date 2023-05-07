@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>GAZE</title>
+
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+
+  <script src="js/libraries/p5.min.js"></script>
+
+</head>
+
+<body>
+
+  <h1>Are you afraid of<a class="sub" href="gaze.html"><u>GAZE</u></a>?</h1>
+  <p>
+    Inspired by the film<a class="sub" href="film.html"><u>Cléo from 5 to 7</u></a><br>
+    Director:<a class="sub" href="director.html"><u>Agnès Varda</u></a>
+  </p>
+
+  <div class="image-container">
+    <figure>
+      <img src="image/poster1.jpg" id="myImage">
+      <figcaption style="text-align: center; font-style: italic;">
+        Posters in different countries
+      </figcaption>
+    </figure>
+    <div class="img-button">
+      <button class="image-button" id="prev-button" onclick="prevImage()">Prev</button>
+      <button class="image-button" id="next-button" onclick="nextImage()">Next</button>
+    </div>
+  </div>
+
+  <h3>
+    Imagine you are Cléo,<br>
+    walking on the street and feeling the GAZE
+  </h3>
+  <a href="simulator.html">START</a>
+
+  <div id="cursorcontainer"></div>
+  <script src="js/cursor.js"></script>
+  <script src="js/image.js"></script>
+
+</body>
+
+</html>
