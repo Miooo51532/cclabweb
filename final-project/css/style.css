@@ -48,6 +48,10 @@ img {
   height: auto;
 }
 
+#corinne1 {
+  width: 35%;
+}
+
 a {
   display: inline-block;
   background-color: black;
