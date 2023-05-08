@@ -40,8 +40,8 @@ function draw() {
     eye.push(new Eye(positions));
   }
 
-  // Eyes open and be attracted to the face position if detected
-  // Otherwise stop and close
+  // Eyes are attracted to the face if detected
+  // Otherwise stop
   for (let i = 0; i < eye.length; i++) {
     eye[i].show();
     eye[i].move();
@@ -109,8 +109,8 @@ class Eye {
     // By calculating "target position - this position"
     // we can get the direction to the target.
     // Then we will arbitrary decrease the acceleration to reach the target
-    let xAcc = (targetX - this.center.x) * 0.001;
-    let yAcc = (targetY - this.center.y) * 0.001;
+    let xAcc = (targetX - this.center.x) * 0.0003;
+    let yAcc = (targetY - this.center.y) * 0.0003;
     this.speedX += xAcc;
     this.speedY += yAcc;
   }
