@@ -60,7 +60,7 @@ function setup() {
     noCursor();
     cursorSketch = new CursorSketch(255, 1);
     noStroke();
-    for (let i = 0; i < 8; i++) {
+    for (let i = 0; i < random(1, 10); i++) {
         eyebg[i] = new CursorSketch(100, random(1, 3));
         eyebg[i].update(random(width), random(height));
     }
@@ -68,7 +68,7 @@ function setup() {
 
 function draw() {
     background(226, 226, 226);
-    for (let i = 0; i < 8; i++) {
+    for (let i = 0; i < eyebg.length; i++) {
         // go to new positions
         if (frameCount % 120 == 0) {
             eyebg[i].update(random(width), random(height));

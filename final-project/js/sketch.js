@@ -32,24 +32,23 @@ function draw() {
   scale(-1, 1);
   image(capture, 0, 0, w, h);
 
+  // Eye points from clmtrackr:
+  // https://www.auduno.com/clmtrackr/docs/reference.html
   positions = tracker.getCurrentPosition();
 
-  if (positions.length > 0 && frameCount % 20 == 0) {
-    // Eye points from clmtrackr:
-    // https://www.auduno.com/clmtrackr/docs/reference.html
+  if (positions.length > 0 && frameCount % 10 == 0) {
     eye.push(new Eye(positions));
   }
 
   // Eyes are attracted to the face if detected
   // Otherwise stop
   for (let i = 0; i < eye.length; i++) {
-    eye[i].show();
-    eye[i].move();
-    eye[i].bounce();
     if (positions.length > 0) {
       eye[i].attractedTo(positions[33][0], positions[33][1]);
       eye[i].irisAttracted(positions[33][0], positions[33][1]);
+      eye[i].move();
     }
+    eye[i].show();
     eye[i].life(i);
   }
 }
@@ -109,8 +108,8 @@ class Eye {
     // By calculating "target position - this position"
     // we can get the direction to the target.
     // Then we will arbitrary decrease the acceleration to reach the target
-    let xAcc = (targetX - this.center.x) * 0.0003;
-    let yAcc = (targetY - this.center.y) * 0.0003;
+    let xAcc = (targetX - this.center.x) * 0.0001;
+    let yAcc = (targetY - this.center.y) * 0.0001;
     this.speedX += xAcc;
     this.speedY += yAcc;
   }

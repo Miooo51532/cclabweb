@@ -35,6 +35,17 @@ h1 {
   font-family: Rubik Pixels;
 }
 
+#film-title {
+  color:rgba(143, 143, 143, 0.5);
+  font-size: 7rem;
+  position: fixed;
+  top: 80%;
+  left: 5%;
+  transform: rotate(-90deg); /* Rotate the subtitle 90 degrees counter-clockwise */
+  transform-origin: top left; /* Set the rotation origin to the top-left corner */
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+
 p {
   font-size: 1.2rem;
   width: 60%;
